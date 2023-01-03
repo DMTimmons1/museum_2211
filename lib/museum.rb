@@ -10,4 +10,10 @@ class Museum
         @exhibits << exhibit
     end
 
+    def recommend_exhibits(patron)
+        patron.interests.map do |interest|
+            @exhibits.find { |exhibit| exhibit.name == interest}
+        end
+    end
+
 end
