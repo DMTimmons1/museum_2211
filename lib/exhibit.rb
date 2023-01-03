@@ -1,6 +1,7 @@
 class Exhibit
     attr_reader :name,
-                :cost
+                :cost,
+                :interests
     def initialize(info)
         @name = info[:name]
         @cost = info[:cost]
