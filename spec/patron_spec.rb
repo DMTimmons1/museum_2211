@@ -2,7 +2,7 @@ require 'rspec'
 require './lib/patron'
 
 RSpec.describe Patron do
-    subject(:patron_1) { described_class.new("Bob", 20) }
+    let(:patron_1) { Patron.new("Bob", 20) }
 
     
     describe '#initialize' do
